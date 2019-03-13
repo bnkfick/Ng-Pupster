@@ -1,7 +1,17 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:300,400|Nunito:400,600,700,900";
-
+a {outline : none;}
 .pupster-container {
   text-align: center;
+}
+.pupster-name a {
+    margin-top: 26px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: #F6C7C6;
+    font-weight: 900;
+    text-decoration: none;
 }
 .pupster-icon {
   font-size: 64px;
@@ -18,14 +28,7 @@ h1 {
   letter-spacing: 2px;
   font-weight: 700;
 }
-h2,
-h3 {
-  font-size: 24px;
-  color: #444;
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
-  text-transform: lowercase;
-}
+
 
 body,
 input[text],

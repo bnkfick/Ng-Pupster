@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+h2,
+h3 {
+  font-size: 24px;
+  color: #444;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+.btn {
+  margin: 30px;
+  background-color: #505066;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 75px;
+  padding-left: 75px;
+  border-radius: 60px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.pupster-icon {
+  position: relative;
+  bottom: 2px;
+}
+
+p {
+    margin: 30px 50px;
+    text-align: left;
+    font-family: 'Amatic SC', cursive;
+    font-size: 18px;
+}

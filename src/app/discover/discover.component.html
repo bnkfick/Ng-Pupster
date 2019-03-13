@@ -3,10 +3,8 @@
 <div class="doggy">
 
     <img alt="Puppy Friend?" src='{{puppies.message}}' *ngIf="puppies.message; else elseBlock" />
-
     <ng-template #elseBlock>
             <i class="fas fa-spinner fa-spin 7x" aria-hidden="true"></i>
-
     </ng-template>
 
 

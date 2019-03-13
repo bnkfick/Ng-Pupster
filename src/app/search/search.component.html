@@ -1,0 +1,23 @@
+<h1>Search</h1>
+<form>
+  <label htmlFor="breed-choice">Breed name:</label>
+  <input 
+      placeholder="Choose a Breed" 
+  />
+  <!-- <datalist id="breeds">
+      {this.state.breeds.map(breed => {
+          return (
+              <option key={breed} value={breed} />
+          )
+      })}
+  </datalist> -->
+  <button 
+  type="submit" 
+  className="btn btn-success btn-block mt-2"
+  onClick={this.handleFormSubmit}>Search</button>
+</form>
+<h2>Doggy List</h2>
+<div *ngFor="let breedImage of breedImages">
+  <img src={{breedImage}} />
+</div>
+

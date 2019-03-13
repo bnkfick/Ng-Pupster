@@ -10,25 +10,34 @@ export class DiscoverComponent implements OnInit {
 
   public puppies = {};
   public pupFriendCount = 0;
-  public friendMatch: false;
+  public friendMatch: boolean = false;
+
 
   constructor(private _puppyService: PuppyService) { }
 
   ngOnInit() {
     this._puppyService.getPuppies()
     .subscribe(data => {
-      console.log(data);
       this.puppies = data;
     });
   }
 
   likeFriend() {
-    // this.recipeService.recipeSelected.emit(this.recipe);
     console.log("Like this friend");
+    let randomNum: Number = Math.floor(Math.random() * 3) + 1;
+    console.log(`randomNum: ${randomNum}`);
+    //if the random number is equal to 3.  Just picked 3, could be 1,2,4 or 5 instead
+    if (3 === randomNum) { //returns true or false
+      console.log("Yay");
+      this.friendMatch = true;
+      this.pupFriendCount = this.pupFriendCount + 1;
+      console.log(this.friendMatch);
+    } 
     this._puppyService.getPuppies()
     .subscribe(data => {
       console.log(data);
       this.puppies = data;
+      this.friendMatch = false;
     });
   }
 
@@ -38,6 +47,7 @@ export class DiscoverComponent implements OnInit {
     .subscribe(data => {
       console.log(data);
       this.puppies = data;
+      this.friendMatch = false;
     });
     }
 }

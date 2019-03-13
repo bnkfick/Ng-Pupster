@@ -1,21 +1,27 @@
 
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
 .doggy {
+
     background: #D0814E;
     background: #EE6666;
+    background: #F6C7C6;
     border-radius: 50px;
     padding: 20px;
     height:350px;
     width: 350px;
     text-align: center;
-    margin: 0 auto;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 img {
-    border-radius: 20%;
-    border: 5px solid #3D2314;
+    border-radius: 10%;
+    /*border: 5px solid #3D2314;
     border: 5px solid #FFCC47;
     border: 1px solid #505C62;
-    /* border: 5px solid #87D271; 
+    border: 5px solid #87D271; 
     border: 5px solid #fff; 
     border: 5px solid rgb(240, 58, 58);  */
 
@@ -24,12 +30,25 @@ img {
 }
 .fa-spinner {
     font-size: 180px;
-    position: relative;
-    top: 15%;
-  }
+    color:#444;
+}
 .thumb {
     display: inline-block;
     padding-top: 40px;
     padding-left: 50px;
     padding-right: 50px;
+}
+h2,
+h3 {
+  padding-top: 10px;
+  font-size: 24px;
+  color:#444;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+p {
+    margin: 0 50px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 28px;
 }

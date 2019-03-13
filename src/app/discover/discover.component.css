@@ -1,13 +1,5 @@
 
-h1 {
-    font-size: 30px;
-    line-height: 1.2;
-    margin-top: 50px;
-    color: #fff;
-    font-family: "Nunito", sans-serif;
-    letter-spacing: 2px;
-    font-weight: 700;
-  }
+
 .doggy {
     background: #D0814E;
     background: #EE6666;
@@ -19,16 +11,25 @@ h1 {
     margin: 0 auto;
 }
 img {
-    border-radius: 50%;
+    border-radius: 20%;
     border: 5px solid #3D2314;
     border: 5px solid #FFCC47;
-    border: 5px solid #505C62;
-    border: 5px solid #87D271; 
+    border: 1px solid #505C62;
+    /* border: 5px solid #87D271; 
+    border: 5px solid #fff; 
+    border: 5px solid rgb(240, 58, 58);  */
+
     max-height: 300px;
     max-width: 300px;
 }
+.fa-spinner {
+    font-size: 180px;
+    position: relative;
+    top: 15%;
+  }
 .thumb {
-    padding-top: 50px;
+    display: inline-block;
+    padding-top: 40px;
     padding-left: 50px;
     padding-right: 50px;
 }

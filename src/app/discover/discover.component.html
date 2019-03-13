@@ -1,13 +1,23 @@
-
-Thumbs up on any pups you'd like to meet!
+<h1>Thumbs up on any pups you'd like to meet!</h1>
 <h2>My pupper friends: {{pupFriendCount}}</h2>
 <div class="doggy">
-    <img alt="Puppy Friend?" src='{{puppies.message}}' />
-    <p>
-        <span class="thumb"><i (click)="likeFriend()" class="fas fa-thumbs-up 3x"></i></span>
-        <span class="thumb"><i (click)="dislikeFriend()" class="fas fa-thumbs-down 3x"></i></span>
-    </p>
+
+    <img alt="Puppy Friend?" src='{{puppies.message}}' *ngIf="puppies.message; else elseBlock" />
+
+    <ng-template #elseBlock>
+            <i class="fas fa-spinner fa-spin 7x" aria-hidden="true"></i>
+
+    </ng-template>
+
+
+    <!-- <img alt="Puppy Friend?" src='{{puppies.message}}' /> -->
+
 </div>
+
 <div>
+    <p>
+        <span class="thumb"><i (click)="likeFriend()" class="fas fa-thumbs-up 7x"></i></span>
+        <span class="thumb"><i (click)="dislikeFriend()" class="fas fa-thumbs-down 7x"></i></span>
+    </p>
     Yay! That Pup is my new friend!
 </div>

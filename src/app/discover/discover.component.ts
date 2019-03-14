@@ -11,6 +11,7 @@ export class DiscoverComponent implements OnInit {
   public puppies = {};
   public pupFriendCount = 0;
   public friendMatch: boolean = false;
+  public matchMessage: String = '';
 
 
   constructor(private _puppyService: PuppyService) { }
@@ -26,12 +27,14 @@ export class DiscoverComponent implements OnInit {
     console.log("Like this friend");
     let randomNum: Number = Math.floor(Math.random() * 3) + 1;
     console.log(`randomNum: ${randomNum}`);
+    this.matchMessage = "Not a Match! Another Dog will be your friend!";
     //if the random number is equal to 3.  Just picked 3, could be 1,2,4 or 5 instead
     if (3 === randomNum) { //returns true or false
-      console.log("Yay");
+      // console.log("Yay");
       this.friendMatch = true;
       this.pupFriendCount = this.pupFriendCount + 1;
-      console.log(this.friendMatch);
+      this.matchMessage = "Yay! That Pup is my new friend!";
+
     } 
     this._puppyService.getPuppies()
     .subscribe(data => {
@@ -43,6 +46,7 @@ export class DiscoverComponent implements OnInit {
 
   dislikeFriend() {
     console.log("DISLike this friend");
+    this.matchMessage = "";
     this._puppyService.getPuppies();    this._puppyService.getPuppies()
     .subscribe(data => {
       console.log(data);

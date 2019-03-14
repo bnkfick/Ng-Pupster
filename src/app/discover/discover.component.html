@@ -9,12 +9,12 @@
 </div>
 
 <div>
-    <h2>My pupper friends: {{pupFriendCount | number}}</h2>
+    <h2>My pupper friends: {{ pupFriendCount | number }}</h2>
     <h2>Thumbs up on any pups you'd like to meet!</h2>
     <p>
         <span class="thumb"><i (click)="likeFriend()" class="fas fa-thumbs-up 7x"></i></span>
         <span class="thumb"><i (click)="dislikeFriend()" class="fas fa-thumbs-down 7x"></i></span>
     </p>
-    <p *ngIf="friendMatch" class="newFriend">Yay! That Pup is my new friend!</p>
-
+    <p class="newFriend">{{matchMessage}}</p>
+    <!-- <p *ngIf="!riendMatch" class="newFriend">Not a Match! Another Dog will be your friend!</p> -->
 </div>

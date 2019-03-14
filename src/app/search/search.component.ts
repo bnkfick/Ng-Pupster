@@ -22,8 +22,12 @@ export class SearchComponent implements OnInit {
 
   ngOnInit() {
     this._puppyService.getBreeds()
-    .subscribe(data => this.breeds = data);
+    .subscribe(data => {
+      this.breeds = data
+
+    });
   }
+
 
   onClickSimple() {
     this.clickInfo = 'clicked';

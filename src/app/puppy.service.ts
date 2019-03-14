@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { IDog } from './dog';
 import { IBreed } from './breed';
 import { Observable } from 'rxjs';
+import { IBreedImage } from './breedImage';
 
 
 @Injectable({
@@ -22,4 +23,9 @@ export class PuppyService {
   getBreeds(): Observable<IBreed[]> {
     return this.http.get<IBreed[]>(this._breedsUrl);
   }
+
+  getBreedImages(breed): Observable<IBreedImage[]> {
+    return this.http.get<IBreedImage[]>(`https://dog.ceo/api/breed/${breed}/images`);
+  }
+
 }

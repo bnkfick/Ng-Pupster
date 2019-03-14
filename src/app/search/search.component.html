@@ -1,18 +1,17 @@
 <h1>Search</h1>
 <form>
   <label for="search-breed">Breed name:</label>
-  <input type="text" name="breed" id="search-breed" list="breed-list" placeholder="Choose a Breed" />
+  <input #searchBreed type="text" name="breed" id="search-breed" list="breed-list" placeholder="Choose a Breed" />
   <datalist id="breed-list">
     <option *ngFor="let breed of breeds.message" value={{breed}}>{{breed}}</option>
   </datalist>
 
-
-
-  <button type="submit" 
+<button type="button" 
   className="btn btn-success btn-block mt-2" 
-  onClick={this.handleFormSubmit}>Search</button>
+  (click)="handleSearch(searchBreed.value)">Search</button>
 </form>
+{{searchedBreed}}
 <h2>Doggy List</h2>
-<div *ngFor="let breedImage of breedImages">
+<div *ngFor="let breedImage of breedImages.message">
   <img src={{breedImage}} />
 </div>

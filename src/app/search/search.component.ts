@@ -24,16 +24,14 @@ export class SearchComponent implements OnInit {
     this._puppyService.getBreeds()
     .subscribe(data => {
       this.breeds = data
-
     });
   }
-
-
-  onClickSimple() {
-    this.clickInfo = 'clicked';
-    setTimeout(() => {
-      this.clickInfo = 'default';
-    }, 3000);
+  handleSearch(breed) {
+    this.searchedBreed = breed;
+    this._puppyService.getBreedImages(breed)
+    .subscribe(data => {
+      console.log(data);
+      this.breedImages = data
+    });
   }
-
 }

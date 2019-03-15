@@ -8,9 +8,9 @@ import { PuppyService } from '../puppy.service';
 })
 export class SearchComponent implements OnInit {
 
-  selectedBreed = '';
-  searchedBreed = '';
-  breedImages: Array<any>;
+  public selectedBreed = '';
+  public searchedBreed = '';
+  public breedImages:any = {};
   clickInfo = 'default';
 
   //clickInfo = 'default';

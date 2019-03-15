@@ -16,7 +16,7 @@ export class SearchComponent implements OnInit {
   //clickInfo = 'default';
   //paragraphClick = 'default';
 
-  public breeds = [];
+  public breeds:any = {};
 
   constructor(private _puppyService: PuppyService) { }
 

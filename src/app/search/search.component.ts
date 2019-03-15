@@ -10,7 +10,7 @@ export class SearchComponent implements OnInit {
 
   selectedBreed = '';
   searchedBreed = '';
-  breedImages = [];
+  breedImages: Array<any>;
   clickInfo = 'default';
 
   //clickInfo = 'default';

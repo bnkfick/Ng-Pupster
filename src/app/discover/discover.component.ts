@@ -8,7 +8,7 @@ import { PuppyService } from '../puppy.service';
 })
 export class DiscoverComponent implements OnInit {
 
-  public puppies: Array<any>;
+  public puppies:any = {};
   public pupFriendCount = 0;
   public friendMatch: boolean = false;
   public matchMessage: String = '';

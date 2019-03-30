@@ -6,11 +6,10 @@
     <option *ngFor="let breed of breeds.message" value={{breed}}>{{breed}}</option>
   </datalist>
 
-<button id="submit-btn" type="button" 
-  className="btn btn-success btn-block mt-2" 
+<button class="hvr-shutter-out-horizontal" type="button"
+  className="btn btn-success btn-block mt-2"
   (click)="handleSearch(searchBreed.value); searchBreed.value = ''">Search</button>
 </form>
-
 
 <h2 *ngIf="breedImages.message && breedImages.message.length > 0">{{searchedBreed}}</h2>
 <div id="content">

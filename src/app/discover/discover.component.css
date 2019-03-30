@@ -3,10 +3,11 @@
 
 .doggy {
 
-    background: #D0814E;
-    background: #EE6666;
+    /* background: #D0814E;
+    background: #EE6666; */
     background: #F6C7C6;
     border-radius: 50px;
+    border: 1px solid #eee;
     padding: 20px;
     height:350px;
     width: 350px;
@@ -21,9 +22,10 @@ img {
     /*border: 5px solid #3D2314;
     border: 5px solid #FFCC47;
     border: 1px solid #505C62;
-    border: 5px solid #87D271; 
-    border: 5px solid #fff; 
+    border: 5px solid #87D271;
+    border: 5px solid #fff;
     border: 5px solid rgb(240, 58, 58);  */
+
 
     max-height: 300px;
     max-width: 300px;
